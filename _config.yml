@@ -21,9 +21,7 @@ icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name 
 url: https://keremdelikoyun.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 
-# Disable imagemagick responsive generation on CI to avoid missing 'convert'
-imagemagick:
-  enabled: false
+# Imagemagick settings are defined later in this file (single block) to avoid duplicates.
 
 # Ensure the Jupyter notebook converter does not run on CI (see the main exclude list below)
 last_updated: false # set to true if you want to display last updated in the footer

@@ -211,7 +211,7 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
+  # - jekyll-jupyter-notebook # disabled on CI (no jupyter needed)
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2

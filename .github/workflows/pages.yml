@@ -1,70 +1,41 @@
-name: Build and deploy Jekyll site to GitHub Pages
+  - name: Setup Python
+    uses: actions/setup-python@v4
+    with:
+      python-version: "3.x"
 
-on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
+  - name: Install system deps (ImageMagick)
+    run: |
+      sudo apt-get update
+      sudo apt-get install -y imagemagick
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+  - name: Install Jupyter and conversion deps
+    run: |
+      python -m pip install --upgrade pip
+      python -m pip install --user jupyter nbconvert nbformat
+      echo "$HOME/.local/bin" >> $GITHUB_PATH
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+  - name: Setup Ruby
+    uses: ruby/setup-ruby@v1
+    with:
+      ruby-version: '3.2'
+      bundler-cache: true
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  - name: Prepare bundler
+    run: |
+      bundle clean --force || true
+      bundle config set path 'vendor/bundle'
 
-      - name: Install system deps (ImageMagick)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y imagemagick
+  - name: Install dependencies
+    run: |
+      bundle install --jobs 4 --retry 3
 
-      - name: Install Jupyter
-        run: |
-          pip install jupyter
+  - name: Build with Jekyll
+    env:
+      JEKYLL_ENV: production
+    run: |
+      bundle exec jekyll build --trace --baseurl ""
 
-      - name: Prepare bundler
-        run: |
-          bundle clean --force || true
-          bundle config set path 'vendor/bundle'
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Install dependencies
-        run: |
-          bundle install --jobs 4 --retry 3
-
-      - name: Build with Jekyll
-        env:
-          JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll build --trace --baseurl ""
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
-
+  - name: Upload artifact
+    uses: actions/upload-pages-artifact@v3
+    with:
+      path: ./_site

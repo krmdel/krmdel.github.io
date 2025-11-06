@@ -200,6 +200,9 @@ ninja.data = [{
           section: "Quotes",},{id: "quotes-all-i-want-to-know-is-where-i-m-going-to-die-so-i-don-t-go-there-charlie-munger",
           title: '“All I want to know is where I’m going to die so I...',
           description: "",
+          section: "Quotes",},{id: "quotes-a-journey-of-a-thousand-miles-begins-with-a-single-step-lao-tzu",
+          title: '“A journey of a thousand miles begins with a single step.” — Lao...',
+          description: "",
           section: "Quotes",},{
         id: 'social-email',
         title: 'email',

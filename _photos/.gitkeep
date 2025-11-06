@@ -1,0 +1,19 @@
+# Photos collection
+# 
+# To add a photo, create a new Markdown file in this directory with format: YYYY-MM-DD-photo-name.md
+# 
+# Example file structure:
+# ---
+# layout: post
+# date: 2025-11-05 00:00:00-0000
+# img: assets/img/photos/your-photo.jpg
+# description: Short description of the photo (optional)
+# ---
+# 
+# Steps:
+# 1. Add your photo image to assets/img/photos/ folder
+# 2. Create a new .md file in _photos/ folder with the format above
+# 3. Set the date, img path, and optionally add a description
+# 
+# Photos will be displayed in a responsive grid on the /photos/ page, sorted by date (newest first)
+

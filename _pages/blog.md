@@ -2,6 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
+icon: ✍️ # Page-specific favicon (emoji or image filename)
 nav: true
 nav_order: 1
 pagination:
@@ -24,8 +25,7 @@ pagination:
 {% if blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
+    <h1 style="font-size: 3.5rem; text-align: center; line-height: 1.2;">{{ site.blog_name }}</h1>
   </div>
   {% endif %}
 
@@ -35,7 +35,7 @@ pagination:
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -46,7 +46,7 @@ pagination:
       {% endif %}
       {% for category in site.display_categories %}
         <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          <i class="fa-solid fa-tag fa-sm"></i> {{ category }}
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>

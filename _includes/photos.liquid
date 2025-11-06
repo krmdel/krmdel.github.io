@@ -1,0 +1,29 @@
+<div class="col mb-4">
+  <div class="card h-100 hoverable">
+    {% if photo.img %}
+      <div class="card-img-top" style="overflow: hidden; height: 300px; display: flex; align-items: center; justify-content: center; background-color: var(--global-bg-color);">
+        {%
+          include figure.liquid
+          loading="eager"
+          path=photo.img
+          sizes = "250px"
+          alt="photo"
+          class="img-fluid rounded z-depth-1"
+          zoomable=true
+          avoid_scaling=true
+        %}
+      </div>
+    {% endif %}
+    <div class="card-body">
+      {% if photo.description %}
+        <p class="card-text">{{ photo.description }}</p>
+      {% endif %}
+      {% if photo.date %}
+        <p class="card-text" style="font-size: 0.875rem; color: var(--global-text-color-light); margin-bottom: 0;">
+          {{ photo.date | date: '%b %Y' }}
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+

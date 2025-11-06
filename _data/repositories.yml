@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - krmdel
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - name: krmdel/TriAgent
+    img: # Add image path here, e.g., assets/img/triagent.jpg
+  - name: krmdel/rt_had
+    img: # Add image path here, e.g., assets/img/rt_had.jpg
+  - name: krmdel/medical_assistant_rag
+    img: # Add image path here, e.g., assets/img/medical_assistant_rag.jpg
+  - name: krmdel/hospital_admission_prediction
+    img: # Add image path here, e.g., assets/img/hospital_admission_prediction.jpg

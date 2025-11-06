@@ -1,6 +1,7 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
 {% assign parts = include.path | split: '.' %}
 {% assign ext = parts.last %}
+{% assign is_external = include.path contains '://' %}
 
 <figure
   {% if include.slot %}
@@ -17,7 +18,9 @@
       {% unless include.avoid_scaling %}
         <source
           class="responsive-img-srcset"
-          {% if ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff' %}
+          {% if is_external %}
+            srcset="{{ include.path }}"
+          {% elsif ext == 'gif' or ext == 'jpeg' or ext == 'jpg' or ext == 'png' or ext == 'tiff' %}
             srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
             type="image/webp"
           {% else %}
@@ -32,7 +35,7 @@
       {% endunless %}
     {% endif %}
     <img
-      src="{% if include.url %}{{ include.url }}{% elsif include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
+      src="{% if include.url %}{{ include.url }}{% elsif is_external %}{{ include.path }}{% elsif include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
       {% if include.class %}
         class="{{ include.class }}"
       {% endif %}
@@ -70,13 +73,29 @@
       {% endif %}
       {% if include.zoomable %}
         data-zoomable
+        {% if include.path %}
+          {% if is_external %}
+            data-zoom-src="{{ include.path }}"
+          {% else %}
+            data-zoom-src="{{ include.path | relative_url }}"
+          {% endif %}
+        {% endif %}
       {% endif %}
       {% if include.loading %}
         loading="{{ include.loading }}"
       {% elsif site.lazy_loading_images %}
         loading="lazy"
       {% endif %}
-      onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+      onerror="
+        try {
+          this.onerror=null; $('.responsive-img-srcset').remove();
+          var u=this.getAttribute('src')||'';
+          if(u.indexOf('github-webpage/photos/')!==-1){ this.src='{{ '/assets/img/photos/' | relative_url }}'+u.split('github-webpage/photos/')[1]; }
+          else if(u.indexOf('github-webpage/projects/')!==-1){ this.src='{{ '/assets/img/projects/' | relative_url }}'+u.split('github-webpage/projects/')[1]; }
+          else if(u.indexOf('github-webpage/publication_preview/')!==-1){ this.src='{{ '/assets/img/publication_preview/' | relative_url }}'+u.split('github-webpage/publication_preview/')[1]; }
+          else if(u.indexOf('github-webpage/profile.jpg')!==-1){ this.src='{{ '/assets/img/profile.jpg' | relative_url }}'; }
+        } catch(e) {}
+      "
     >
   </picture>
 

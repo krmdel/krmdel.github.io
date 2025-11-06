@@ -1,97 +1,134 @@
 - title: General Information
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - name: Name
+      value: Kerem Delikoyun
+    - name: Speciality
+      value: Machine Learning Engineer
+    - name: Email
+      value: kerem.delikoyun@tum-create.edu.sg
+
+- title: Work
+  type: time_table
+  contents:
+    - title: Research Associate
+      institution: TUMCREATE
+      location: Singapore
+      year: Aug 2021 - Present
+      description:
+        - Computer vision, natural language processing, agentic AI, medical imaging, machine learning
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Doctor of Philosophy (Ph.D.)
+      institution: Electrical and Computer Engineering, Technical University of Munich
+      location: Germany
+      year: Dec 2025
+    - title: Masters of Science (M.Sc.)
+      institution: Physics, Technical University of Munich
+      location: Germany
+      year: Mar 2023
+    - title: Bachelor of Science (B.Sc.)
+      institution: Engineer Physics, Gaziantep University
+      location: Turkey
+      year: Jun 2015
 
-- title: Experience
+- title: Awards & Honors
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: TextArena Agent Hackathon Finalist
+      institution: AITinkerers
+      location: Singapore
+      year: Mar 2025
+    - title: M.Sc. with the highest distinction
+      institution: Technical University of Munich
+      location: Germany
+      year: Mar 2023
+    - title: 4th Place in National Patent Competition
+      institution: Turkish Patent Institute
+      location: Turkey
+      year: Oct 2020
+    - title: B.Sc. as salutatorian
+      institution: Gaziantep University
+      location: Turkey
+      year: Jun 2015
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Certificates
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: AWS Certified AI Practitioner
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Amazon Web Services (AWS) - Issued Oct 2024 · Expires Oct 2027
+    - title: AWS Certified Cloud Practitioner
       items:
-        - Description 1.
-        - Description 2.
+        - Amazon Web Services (AWS) - Issued Oct 2024 · Expires Oct 2027
+    - title: Large Language Model (LLM)
+      items:
+        - DataTalksClub - Issued Oct 2024
+    - title: MLOps
+      items:
+        - DataTalksClub - Issued Sep 2024
 
-- title: Other Interests
+- title: Publications
+  type: publications
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: "#Biomedical-imaging"
+      items:
+        - Digital Holographic Microscopy (DHM)
+        - Quantitative Phase Imaging (QPI)
+    - title: "#Computer-vision"
+      items:
+        - Convolutional Neural Networks (CNN)
+        - Vision Transformers (ViT)
+        - OpenCV
+        - Image Segmentation & Object Detection
+    - title: "#Natural-language-processing"
+      items:
+        - Multi-agent Systems
+        - Automated Reasoning
+        - Deep Research
+        - Prompt Engineering
+        - Retrieval-Augmented Generation (RAG)
+        - Knowledge Graphs
+        - LLM frameworks (LangChain, LangGraph)
+    - title: "#System-design-development"
+      items:
+        - LLMOps
+        - MLOps
+        - Cloud Computing – Amazon Web Services (AWS)
+        - Continuous Integration / Continuous Delivery (CI/CD)
+        - Containerization (Docker, Docker Compose)
+        - Workflow Orchestration (Prefect)
+        - Experiment Tracking (MLflow)
+        - API Design & Microservices
+    - title: "#Deep-learning"
+      items:
+        - Graph Neural Networks (GNN)
+        - PyTorch
+        - Scikit-learn
+        - AutoML (H2O)
+    - title: "#Programming"
+      items:
+        - Python
+        - CUDA
+        - SQL
+    - title: "#Data-science & analytics"
+      items:
+        - Exploratory Data Analysis (EDA)
+        - Feature Engineering
+        - Data Visualization (Matplotlib, Plotly, Seaborn)
+    - title: "#Research & innovation"
+      items:
+        - Scientific Writing & Publication
+        - Proposal Writing
+        - Experimental Design
+
+- title: Languages
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "English: Full professional proficiency"
+    - "Turkish: Native"

@@ -2,11 +2,32 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Most recent machine learning and software development projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+icon: 💻 # Page-specific favicon (emoji or image filename)
+display_categories: []
 horizontal: false
+_styles: |
+  .projects .card-title,
+  .projects h2.card-title,
+  .projects .card-body h2.card-title {
+    font-size: 1.1rem !important;
+    text-align: left !important;
+    line-height: 1.4 !important;
+  }
+  .projects .card-img-top {
+    height: 275px !important;
+    width: 100% !important;
+    object-fit: contain !important; /* fit horizontally; keep aspect ratio */
+    object-position: center center !important;
+    background-color: #ffffff !important; /* white bars top/bottom */
+    display: block !important;
+  }
+  .projects .card .card-body {
+    display: flex !important;
+    flex-direction: column !important;
+  }
 ---
 
 <!-- pages/projects.md -->

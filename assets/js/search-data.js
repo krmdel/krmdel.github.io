@@ -194,6 +194,11 @@ ninja.data = [{
           description: "Johor Bahru/Malaysia",
           section: "Photos",handler: () => {
               window.location.href = "/photos/2025-09-jb/";
+            },},{id: "projects-huggingface-39-s-community-computer-vision-course",
+          title: 'HuggingFace&amp;#39;s Community Computer Vision Course',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/huggingface_cv_course/";
             },},{id: "projects-real-time-deep-learning-phase-imaging-flow-cytometer-reveals-blood-cell-aggregate-biomarkers-for-haematology-diagnostics",
           title: 'Real-time deep learning phase imaging flow cytometer reveals blood cell aggregate biomarkers for...',
           description: "",

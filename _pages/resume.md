@@ -5,7 +5,7 @@ title: Resume
 nav: true
 nav_order: 5
 icon: 📄 # Page-specific favicon (emoji or image filename)
-cv_pdf: cv.pdf # you can also use external links here
+cv_pdf: https://rxresu.me/kerem.delikoyun/cv-keremdelikoyun # you can also use external links here
 description: ""
 toc:
   sidebar: left

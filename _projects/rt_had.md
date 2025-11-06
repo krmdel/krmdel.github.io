@@ -4,8 +4,6 @@ title: "Real-time deep learning phase imaging flow cytometer reveals blood cell 
 img: https://cdn.keremdelikoyun.com/projects/arxiv25_1.png
 importance: 2
 category: research
-github: https://github.com/krmdel/rt_had
-arxiv: https://arxiv.org/abs/2508.09215
 _styles: |
   .post-header { display: none; }
 ---

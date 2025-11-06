@@ -4,8 +4,6 @@ title: "TriAgent: Automated Biomarker Discovery with Deep Research Grounding for
 img: https://cdn.keremdelikoyun.com/projects/arxiv25_2.png
 importance: 1
 category: research
-github: https://github.com/krmdel/TriAgent
-arxiv: https://arxiv.org/abs/2510.16080
 _styles: |
   .post-header { display: none; }
 ---

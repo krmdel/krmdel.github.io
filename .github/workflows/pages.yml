@@ -26,6 +26,11 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y imagemagick
 
+      - name: Prepare bundler
+        run: |
+          bundle clean --force || true
+          bundle config set path 'vendor/bundle'
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -34,7 +39,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          bundle config set path 'vendor/bundle'
           bundle install --jobs 4 --retry 3
 
       - name: Build with Jekyll

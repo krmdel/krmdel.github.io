@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Real-time deep learning phase imaging flow cytometer reveals blood cell aggregate biomarkers for haematology diagnostics"
-img: https://keremdelikoyun.com/projects/arxiv25_1.png
+img: https://cdn.keremdelikoyun.com/projects/arxiv25_1.png
 importance: 2
 category: research
 github: https://github.com/krmdel/rt_had
@@ -14,7 +14,7 @@ _styles: |
 
 <div class="row justify-content-center" style="margin-top: 30px; margin-bottom: 30px;">
   <div class="col-sm-12 col-md-10 col-lg-8">
-    {% include figure.liquid path="https://keremdelikoyun.com/projects/arxiv25_1_2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    {% include figure.liquid path="https://cdn.keremdelikoyun.com/projects/arxiv25_1_2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
   </div>
 </div>
 

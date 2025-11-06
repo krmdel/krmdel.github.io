@@ -27,12 +27,12 @@
     {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
   {% if page.url == '/blog/index.html' %}
-    {% if page.title == 'cv' or page.title == 'CV' %}{{ 'CV' }}{% else %}{{ page.title | capitalize }}{% endif %} | {{ title }}
+    {% if page.title == 'cv' or page.title == 'CV' or page.title == 'Resume' %}{{ 'Resume' }}{% else %}{{ page.title | capitalize }}{% endif %} | {{ title }}
   {% elsif page.title != 'blank' and page.url != '/' %}
     {% if page.title == null or page.title == '' %}
       {{ page.date | date: '%Y' }} | {{ title }}
     {% else %}
-      {% if page.title == 'cv' or page.title == 'CV' %}{{ 'CV' }}{% else %}{{ page.title | capitalize }}{% endif %} | {{ title }}
+      {% if page.title == 'cv' or page.title == 'CV' or page.title == 'Resume' %}{{ 'Resume' }}{% else %}{{ page.title | capitalize }}{% endif %} | {{ title }}
     {% endif %}
   {% else %}
     {{ title }}

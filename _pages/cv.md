@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: CV
+title: Resume
 nav: true
 nav_order: 5
 icon: 📄 # Page-specific favicon (emoji or image filename)

@@ -14,7 +14,7 @@ _styles: |
 
 profile:
   align: right
-  image: https://keremdelikoyun.com/profile.jpg
+  image: https://cdn.keremdelikoyun.com/profile.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p></p>

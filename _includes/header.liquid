@@ -108,7 +108,7 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {% if p.title == 'cv' or p.title == 'CV' %}{{ 'CV' }}{% else %}{{ p.title | capitalize }}{% endif %}
+                    {% if p.title == 'cv' or p.title == 'CV' or p.title == 'Resume' %}{{ 'Resume' }}{% else %}{{ p.title | capitalize }}{% endif %}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}

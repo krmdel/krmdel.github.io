@@ -26,6 +26,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y imagemagick
 
+      - name: Install Jupyter
+        run: |
+          pip install jupyter
+
       - name: Prepare bundler
         run: |
           bundle clean --force || true

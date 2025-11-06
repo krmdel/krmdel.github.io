@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://krmdel.github.io/sitemap.xml
+Sitemap: https://keremdelikoyun.com/sitemap.xml

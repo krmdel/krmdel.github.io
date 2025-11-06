@@ -4,7 +4,7 @@ permalink: /blog/
 title: blog
 icon: ✍️ # Page-specific favicon (emoji or image filename)
 nav: true
-nav_order: 1
+nav_order: 6
 pagination:
   enabled: true
   collection: posts

@@ -73,6 +73,34 @@
 - title: Publications
   type: publications
 
+- title: Patents
+  type: time_table
+  contents:
+    - title: Quantitative Analysis of Immune Cell and Platelet Aggregate Activation Using Realtime and End-To-End Image Processing Framework for Digital Holographic Microscopy
+      institution: 10202500263R (patent pending)
+      year: 2025
+    - title: Real-Time And End-To-End Image Processing Framework for Digital Holographic Microscopy
+      institution: 10202401892U (patent pending)
+      year: 2024
+    - title: Hybrid Detection and Separation of Target Cells Using Magnetic Levitation and Deep Learning
+      institution: WO2023018398A1 (published)
+      year: 2023
+      linkitems:
+        - link: https://patents.google.com/patent/WO2023018398A1
+          linkname: View Patent
+    - title: Cell viability analysis and counting from holograms by using deep learning and appropriate lensless holographic microscope
+      institution: WO2021076075A2 (published)
+      year: 2021
+      linkitems:
+        - link: https://patents.google.com/patent/WO2021076075A2
+          linkname: View Patent
+    - title: Protein Detection Using Lensless Holographic Microscopy Imaging Technique in a Magnetic Levitation Setup
+      institution: WO2021086293A2 (published)
+      year: 2021
+      linkitems:
+        - link: https://patents.google.com/patent/WO2021086293A2
+          linkname: View Patent
+
 - title: Skills
   type: nested_list
   contents:

@@ -4,7 +4,7 @@ title: photos
 permalink: /photos/
 description: Photography and visual moments
 nav: true
-nav_order: 9
+nav_order: 8
 icon: 📷 # Page-specific favicon (emoji or image filename)
 _styles: |
   .photos .card-img-top {

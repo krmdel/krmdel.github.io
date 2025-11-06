@@ -5,44 +5,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.x"
-
-      - name: Install system deps (ImageMagick, pandoc)
+      - name: Install system deps (ImageMagick)
         run: |
           sudo apt-get update
-          sudo apt-get install -y imagemagick pandoc
+          sudo apt-get install -y imagemagick
 
-      - name: Install Jupyter and conversion deps
+      - name: Ensure no Jupyter notebooks are present
         run: |
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install --user jupyter nbconvert nbformat nbclient ipykernel pillow
-          # make sure pip --user bin is available to subsequent steps
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-          which jupyter || true
-          jupyter --version || true
-          jupyter nbconvert --version || true
-
-      - name: Clean Jupyter notebooks
-        run: |
-          # Remove zero-byte notebooks and invalid JSON notebooks to avoid conversion errors
-          if [ -d assets/jupyter ]; then
-            echo "Cleaning empty or invalid .ipynb files in assets/jupyter"
-            find assets/jupyter -name '*.ipynb' -type f -size 0 -print -delete || true
-            for f in assets/jupyter/*.ipynb; do
-              [ -e "$f" ] || continue
-              # try to parse JSON; if parsing fails, remove the file
-              python -c "import json,sys
-    try:
-        json.load(open(sys.argv[1], encoding='utf-8'))
-    except Exception:
-        sys.exit(1)" "$f" || rm -f "$f"
-                done
-              else
-                echo "No assets/jupyter directory, skipping notebook cleanup"
-              fi
+          rm -rf assets/jupyter || true
+          echo "Removed assets/jupyter (if existed) to avoid jupyter conversion"
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1

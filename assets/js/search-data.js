@@ -84,6 +84,16 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2019-10-cbms-grant/";
+            },},{id: "news-kerem-gave-a-seminar-on-deep-learning-for-cellular-analysis-at-gdg-izmir",
+          title: 'Kerem gave a seminar on deep learning for cellular analysis at GDG Izmir....',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2020-02-gdg/";
+            },},{id: "news-kerem-gave-a-talk-on-applications-of-deep-learning-in-life-sciences",
+          title: 'Kerem gave a talk on applications of deep learning in life sciences.',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2020-06-hacknbreak/";
             },},{id: "news-kerem-39-s-collaborative-microscope-design-received-award-in-fourth-place-at-national-patent-competition",
           title: 'Kerem&amp;#39;s collaborative microscope design received award in fourth place at national patent competition....',
           description: "",

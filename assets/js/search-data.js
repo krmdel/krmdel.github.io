@@ -218,6 +218,12 @@ ninja.data = [{
           section: "Quotes",},{id: "quotes-a-journey-of-a-thousand-miles-begins-with-a-single-step-lao-tzu",
           title: '“A journey of a thousand miles begins with a single step.” — Lao...',
           description: "",
+          section: "Quotes",},{id: "quotes-now-i-am-become-death-the-destroyer-of-worlds-j-robert-oppenheimer",
+          title: '“Now, I am become Death, the destroyer of worlds.” — J. Robert Oppenheimer...',
+          description: "",
+          section: "Quotes",},{id: "quotes-if-i-try-my-best-and-fail-well-i-ve-tried-my-best-steve-jobs",
+          title: '“If I try my best and fail, well, I’ve tried my best.” —...',
+          description: "",
           section: "Quotes",},{
         id: 'social-email',
         title: 'email',

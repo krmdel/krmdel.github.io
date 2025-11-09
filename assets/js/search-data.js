@@ -224,6 +224,9 @@ ninja.data = [{
           section: "Quotes",},{id: "quotes-if-i-try-my-best-and-fail-well-i-ve-tried-my-best-steve-jobs",
           title: '“If I try my best and fail, well, I’ve tried my best.” —...',
           description: "",
+          section: "Quotes",},{id: "quotes-victory-is-for-those-who-can-say-victory-is-mine-success-is-for-those-who-can-begin-saying-i-will-succeed-and-say-i-have-succeeded-in-the-end-mustafa-kemal-atatürk",
+          title: '“Victory is for those who can say “Victory is mine”. Success is for...',
+          description: "",
           section: "Quotes",},{
         id: 'social-email',
         title: 'email',

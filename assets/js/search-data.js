@@ -227,6 +227,9 @@ ninja.data = [{
           section: "Quotes",},{id: "quotes-victory-is-for-those-who-can-say-victory-is-mine-success-is-for-those-who-can-begin-saying-i-will-succeed-and-say-i-have-succeeded-in-the-end-mustafa-kemal-atatürk",
           title: '“Victory is for those who can say “Victory is mine”. Success is for...',
           description: "",
+          section: "Quotes",},{id: "quotes-success-is-not-final-failure-is-not-fatal-it-is-the-courage-to-continue-that-counts-winston-s-churchill",
+          title: '“Success is not final, failure is not fatal: it is the courage to...',
+          description: "",
           section: "Quotes",},{
         id: 'social-email',
         title: 'email',

@@ -10,19 +10,19 @@
 {% assign repo_url = repo_name | split: '/' %}
 {% assign repo_display_name = repo_url[1] %}
 
-<div class="col mb-4">
+<div class="col-md-6 col-lg-6 mb-4">
   <a href="https://github.com/{{ repo_name }}" style="text-decoration: none; color: inherit;">
-    <div class="card h-100 hoverable">
-      <div class="card-body">
-        <h3 class="card-title" style="font-size: 1.1rem !important; line-height: 1.4 !important; margin-bottom: 0.75rem;">
+    <div class="card h-100 hoverable" style="display: flex; flex-direction: column;">
+      <div class="card-body" style="display: flex; flex-direction: column; justify-content: center; text-align: center; flex-grow: 1;">
+        <h3 class="card-title" style="font-size: 1.1rem !important; line-height: 1.4 !important; margin-bottom: 0.75rem; text-align: center;">
           <i class="fa-solid fa-display" style="margin-right: 8px;"></i>{{ repo_display_name }}
         </h3>
         {% if repo_description and repo_description != blank %}
-          <p class="card-text" style="margin-bottom: 1rem;">{{ repo_description }}</p>
+          <p class="card-text" style="margin-bottom: 1rem; text-align: center;">{{ repo_description }}</p>
         {% else %}
-          <p class="card-text" style="margin-bottom: 1rem; color: var(--global-text-color-light);">No description provided</p>
+          <p class="card-text" style="margin-bottom: 1rem; color: var(--global-text-color-light); text-align: center;">No description provided</p>
         {% endif %}
-        <div class="row ml-1 mr-1 p-0">
+        <div class="row ml-1 mr-1 p-0" style="justify-content: center;">
           <div class="github-icon">
             <div class="icon" data-toggle="tooltip" title="Code Repository">
               <a href="https://github.com/{{ repo_name }}" rel="external nofollow noopener" target="_blank" style="color: inherit;">

@@ -5,8 +5,10 @@ repo_description_lines_max: 2
 
 github_repos:
   - name: krmdel/TriAgent
-    img: https://cdn.keremdelikoyun.com/projects/arxiv25_2.png
+    img: # Add image path here, e.g., assets/img/triagent.jpg
   - name: krmdel/rt_had
-    img: https://cdn.keremdelikoyun.com/projects/arxiv25_1.png
+    img: # Add image path here, e.g., assets/img/rt_had.jpg
   - name: krmdel/medical_assistant_rag
+    img: # Add image path here, e.g., assets/img/medical_assistant_rag.jpg
   - name: krmdel/hospital_admission_prediction
+    img: # Add image path here, e.g., assets/img/hospital_admission_prediction.jpg

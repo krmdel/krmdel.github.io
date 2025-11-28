@@ -44,8 +44,7 @@
   <a href="https://github.com/{{ repo_name }}">
     {% if repo_img and repo_img != blank %}
       {% comment %} Display custom thumbnail if provided {% endcomment %}
-      {% assign repo_img_quoted = repo_img %}
-      {% include figure.liquid loading="lazy" path=repo_img_quoted sizes="(min-width: 768px) 400px, 100vw" alt=repo_name class="w-100 rounded z-depth-1" %}
+      {% include figure.liquid loading="lazy" path=repo_img sizes="(min-width: 768px) 400px, 100vw" alt="{{ repo_name }}" class="w-100 rounded z-depth-1" %}
     {% else %}
       {% comment %} Fallback to GitHub stats if no thumbnail {% endcomment %}
       <img

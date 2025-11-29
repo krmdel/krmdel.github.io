@@ -285,7 +285,7 @@ ninja.data = [{
           title: '“Intelligence is the wife, imagination is the mistress, memory is the servant.” Victor...',
           description: "",
           section: "Quotes",},{id: "quotes-absence-of-evidence-is-not-evidence-of-absence-carl-sagan",
-          title: '“Absence of evidence is not evidence of absence.”  Carl Sagan',
+          title: '“Absence of evidence is not evidence of absence.”Carl Sagan',
           description: "",
           section: "Quotes",},{
         id: 'social-email',

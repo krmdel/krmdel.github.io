@@ -21,7 +21,7 @@
               {% if item.inline %}
                 <blockquote class="blockquote" style="margin-bottom: 0;">
                   {% assign quote_content = item.content | remove: '<p>' | remove: '</p>' | strip %}
-                  {% comment %} Check if content has quotes (straight or curly) and author on separate lines {% endcomment %}
+                  {% comment %} Simple logic: split into lines, first line is quote, second line is author {% endcomment %}
                   {% assign lines = quote_content | newline_to_br | split: '<br />' %}
                   {% assign non_empty_lines = '' | split: '' %}
                   {% for line in lines %}
@@ -31,59 +31,17 @@
                     {% endif %}
                   {% endfor %}
                   {% if non_empty_lines.size >= 2 %}
-                    {% comment %} Has at least 2 lines - first should be quote, second should be author {% endcomment %}
-                    {% assign first_line = non_empty_lines[0] %}
-                    {% assign second_line = non_empty_lines[1] | strip %}
-                    <p style="margin-bottom: 0.5rem;">{{ first_line }}</p>
-                    {% assign author_text = second_line %}
-                    {% unless author_text contains '―' %}
-                      {% assign author_text = author_text | prepend: '― ' %}
-                    {% endunless %}
+                    {% comment %} Has at least 2 lines - first is quote, second is author {% endcomment %}
+                    <p style="margin-bottom: 0.5rem;">{{ non_empty_lines[0] }}</p>
                     <footer class="blockquote-footer" style="margin-top: 0.5rem;">
-                      <cite>{{ author_text }}</cite>
+                      <cite>{{ non_empty_lines[1] | strip }}</cite>
                     </footer>
-                  {% elsif quote_content contains '―' %}
-                    {% comment %} Has em dash separator {% endcomment %}
-                    {% assign parts = quote_content | split: '―' %}
-                    <p style="margin-bottom: 0.5rem;">{{ parts[0] | strip }}</p>
-                    {% assign author_text = parts[1] | strip %}
-                    <footer class="blockquote-footer" style="margin-top: 0.5rem;">
-                      <cite>― {{ author_text }}</cite>
-                    </footer>
+                  {% elsif non_empty_lines.size == 1 %}
+                    {% comment %} Only one line - display as is {% endcomment %}
+                    <p style="margin-bottom: 0.5rem;">{{ non_empty_lines[0] }}</p>
                   {% else %}
-                    {% comment %} Try to split by paragraphs or lines {% endcomment %}
-                    {% assign paragraphs = quote_content | split: '</p><p>' %}
-                    {% if paragraphs.size > 1 %}
-                      <p style="margin-bottom: 0.5rem;">{{ paragraphs[0] | strip }}</p>
-                      {% assign author_text = paragraphs[1] | strip %}
-                      {% unless author_text contains '―' %}
-                        {% assign author_text = author_text | prepend: '― ' %}
-                      {% endunless %}
-                      <footer class="blockquote-footer" style="margin-top: 0.5rem;">
-                        <cite>{{ author_text }}</cite>
-                      </footer>
-                    {% else %}
-                      {% assign lines = quote_content | newline_to_br | split: '<br />' %}
-                      {% assign non_empty_lines = '' | split: '' %}
-                      {% for line in lines %}
-                        {% assign trimmed = line | strip %}
-                        {% if trimmed != '' %}
-                          {% assign non_empty_lines = non_empty_lines | push: trimmed %}
-                        {% endif %}
-                      {% endfor %}
-                      {% if non_empty_lines.size >= 2 %}
-                        <p style="margin-bottom: 0.5rem;">{{ non_empty_lines[0] }}</p>
-                        {% assign author_text = non_empty_lines[1] | strip %}
-                        {% unless author_text contains '―' %}
-                          {% assign author_text = author_text | prepend: '― ' %}
-                        {% endunless %}
-                        <footer class="blockquote-footer" style="margin-top: 0.5rem;">
-                          <cite>{{ author_text }}</cite>
-                        </footer>
-                      {% else %}
-                        {{ quote_content | emojify }}
-                      {% endif %}
-                    {% endif %}
+                    {% comment %} Fallback: display content as is {% endcomment %}
+                    {{ quote_content | emojify }}
                   {% endif %}
                 </blockquote>
               {% else %}

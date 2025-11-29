@@ -24,15 +24,23 @@
                   {% if quote_content contains '―' %}
                     {% assign parts = quote_content | split: '―' %}
                     <p style="margin-bottom: 0.5rem;">{{ parts[0] | strip }}</p>
+                    {% assign author_text = parts[1] | strip %}
+                    {% unless author_text contains '―' %}
+                      {% assign author_text = author_text | prepend: '― ' %}
+                    {% endunless %}
                     <footer class="blockquote-footer" style="margin-top: 0.5rem;">
-                      <cite>― {{ parts[1] | strip }}</cite>
+                      <cite>{{ author_text }}</cite>
                     </footer>
                   {% else %}
                     {% assign paragraphs = quote_content | split: '</p><p>' %}
                     {% if paragraphs.size > 1 %}
                       <p style="margin-bottom: 0.5rem;">{{ paragraphs[0] | strip }}</p>
+                      {% assign author_text = paragraphs[1] | strip %}
+                      {% unless author_text contains '―' %}
+                        {% assign author_text = author_text | prepend: '― ' %}
+                      {% endunless %}
                       <footer class="blockquote-footer" style="margin-top: 0.5rem;">
-                        <cite>― {{ paragraphs[1] | strip }}</cite>
+                        <cite>{{ author_text }}</cite>
                       </footer>
                     {% else %}
                       {% assign lines = quote_content | newline_to_br | split: '<br />' %}
@@ -45,8 +53,12 @@
                       {% endfor %}
                       {% if non_empty_lines.size >= 2 %}
                         <p style="margin-bottom: 0.5rem;">{{ non_empty_lines[0] }}</p>
+                        {% assign author_text = non_empty_lines[1] | strip %}
+                        {% unless author_text contains '―' %}
+                          {% assign author_text = author_text | prepend: '― ' %}
+                        {% endunless %}
                         <footer class="blockquote-footer" style="margin-top: 0.5rem;">
-                          <cite>― {{ non_empty_lines[1] }}</cite>
+                          <cite>{{ author_text }}</cite>
                         </footer>
                       {% else %}
                         {{ quote_content | emojify }}

@@ -19,8 +19,17 @@
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
-                <blockquote class="blockquote">
-                  {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                <blockquote class="blockquote" style="margin-bottom: 0;">
+                  {% assign quote_content = item.content | remove: '<p>' | remove: '</p>' | strip %}
+                  {% if quote_content contains '―' %}
+                    {% assign parts = quote_content | split: '―' %}
+                    <p style="margin-bottom: 0.5rem;">{{ parts[0] | strip }}</p>
+                    <footer class="blockquote-footer" style="margin-top: 0.5rem;">
+                      <cite>― {{ parts[1] | strip }}</cite>
+                    </footer>
+                  {% else %}
+                    {{ quote_content | emojify }}
+                  {% endif %}
                 </blockquote>
               {% else %}
                 <a class="quote-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>

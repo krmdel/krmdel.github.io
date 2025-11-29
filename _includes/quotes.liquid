@@ -25,11 +25,8 @@
                     {% assign parts = quote_content | split: '―' %}
                     <p style="margin-bottom: 0.5rem;">{{ parts[0] | strip }}</p>
                     {% assign author_text = parts[1] | strip %}
-                    {% unless author_text contains '―' %}
-                      {% assign author_text = author_text | prepend: '― ' %}
-                    {% endunless %}
                     <footer class="blockquote-footer" style="margin-top: 0.5rem;">
-                      <cite>{{ author_text }}</cite>
+                      <cite>― {{ author_text }}</cite>
                     </footer>
                   {% else %}
                     {% assign paragraphs = quote_content | split: '</p><p>' %}

@@ -287,6 +287,12 @@ ninja.data = [{
           section: "Quotes",},{id: "quotes-absence-of-evidence-is-not-evidence-of-absence-carl-sagan",
           title: '“Absence of evidence is not evidence of absence.”  Carl Sagan',
           description: "",
+          section: "Quotes",},{id: "quotes-you-have-to-stay-faithful-to-what-you-re-working-on-stephen-king",
+          title: '“You have to stay faithful to what you’re working on.”  Stephen King',
+          description: "",
+          section: "Quotes",},{id: "quotes-patience-is-a-virtue-and-i-m-learning-patience-it-s-a-tough-lesson-elon-musk",
+          title: '“Patience is a virtue, and I’m learning patience. It’s a tough lesson.” Elon...',
+          description: "",
           section: "Quotes",},{
         id: 'social-email',
         title: 'email',

@@ -13,7 +13,7 @@ _styles: |
   .projects h2.card-title,
   .projects .card-body h2.card-title {
     font-size: 1.1rem !important;
-    text-align: left !important;
+    text-align: center !important;
     line-height: 1.4 !important;
   }
   .projects .card-img-top {
@@ -27,6 +27,9 @@ _styles: |
   .projects .card .card-body {
     display: flex !important;
     flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 ---
 

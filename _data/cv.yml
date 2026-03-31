@@ -4,25 +4,38 @@
     - name: Name
       value: Kerem Delikoyun
     - name: Speciality
-      value: Machine Learning Engineer
+      value: AI Engineer
     - name: Email
       value: kerem.delikoyun@tum-create.edu.sg
 
 - title: Work
   type: time_table
   contents:
+    - title: Research Fellow and Team Lead
+      institution: TUMCREATE
+      location: Singapore
+      year: Jan 2026 - Present
+      description:
+        - Agentic AI
+        - LLM-based multi-agent systems
+        - Health for AI
+        - Translational medtech development
     - title: Research Associate
       institution: TUMCREATE
       location: Singapore
-      year: Aug 2021 - Present
+      year: Aug 2021 - Dec 2025
       description:
-        - Computer vision, natural language processing, agentic AI, medical imaging, machine learning
+        - Computer vision
+        - Natural language processing
+        - Agentic AI
+        - Medical imaging
+        - Machine learning
 
 - title: Education
   type: time_table
   contents:
-    - title: Doctor of Philosophy (Ph.D.)
-      institution: Electrical and Computer Engineering, Technical University of Munich
+    - title: Doctor of Engineering (Dr.-Ing.)
+      institution: Electrical and Computer Engineering,<br>Technical University of Munich
       location: Germany
       year: Dec 2025
     - title: Masters of Science (M.Sc.)
@@ -37,6 +50,10 @@
 - title: Awards & Honors
   type: time_table
   contents:
+    - title: SMART IG 2.0 Commercialization Funding Grant
+      institution: SMART & NRF
+      location: Singapore
+      year: Sep 2025
     - title: TextArena Agent Hackathon Finalist
       institution: AITinkerers
       location: Singapore
@@ -76,6 +93,12 @@
 - title: Patents
   type: time_table
   contents:
+    - title: A module and method for identifying cellular aggregates using digital holographic microscopy
+      institution: WO2026005710A1
+      year: 2025
+      linkitems:
+        - link: https://patents.google.com/patent/WO2026005710A1
+          linkname: View Patent
     - title: Quantitative Analysis of Immune Cell and Platelet Aggregate Activation Using Realtime and End-To-End Image Processing Framework for Digital Holographic Microscopy
       institution: 10202500263R (patent pending)
       year: 2025

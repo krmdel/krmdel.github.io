@@ -46,7 +46,7 @@ ninja.data = [{
           },
         },{id: "nav-quotes",
           title: "quotes",
-          description: "Daily quotes for inspiration",
+          description: "Remarkable quotes from remarkable people for inspiration",
           section: "Navigation",
           handler: () => {
             window.location.href = "/quotes/";
@@ -144,6 +144,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-12-dr-ing-degree/";
+            },},{id: "news-kerem-was-appointed-as-research-fellow-and-team-lead-of-cellface-project-at-tumcreate",
+          title: 'Kerem was appointed as Research Fellow and Team Lead of CellFACE project at...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-01-cellface-fellow/";
             },},{id: "photos-2024-02-at",
           title: '2024 02 At',
           description: "Atlanta/USA",
@@ -204,6 +209,11 @@ ninja.data = [{
           description: "Johor Bahru/Malaysia",
           section: "Photos",handler: () => {
               window.location.href = "/photos/2025-09-jb/";
+            },},{id: "projects-agentic-os-for-healthcare-amp-ai-doctor-for-medical-superintelligence",
+          title: 'Agentic OS for Healthcare &amp;amp; AI Doctor for Medical Superintelligence',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/agentic-os-healthcare-ai/";
             },},{id: "projects-huggingface-39-s-community-computer-vision-course",
           title: 'HuggingFace&amp;#39;s Community Computer Vision Course',
           description: "",

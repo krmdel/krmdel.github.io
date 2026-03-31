@@ -21,7 +21,7 @@ _styles: |
   /* Keep all text strictly to the left of the profile image on wider screens */
   @media (min-width: 576px) {
     .post article .clearfix {
-      margin-right: 32%;
+      margin-right: 32% !important;
     }
   }
 

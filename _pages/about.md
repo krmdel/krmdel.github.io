@@ -8,8 +8,21 @@ _styles: |
     max-width: 280px;
     width: 280px;
   }
+
   .post article .clearfix p {
     text-align: justify !important;
+  }
+
+  /* Hide unused more-info block */
+  .profile .more-info {
+    display: none !important;
+  }
+
+  /* Keep all text strictly to the left of the profile image on wider screens */
+  @media (min-width: 576px) {
+    .post article .clearfix {
+      margin-right: 32%;
+    }
   }
 
 profile:

@@ -38,6 +38,29 @@ body.sticky-bottom-footer {
   }
 }
 
+// About layout: intro text + profile image side by side
+.about-intro {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .about-intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .about-intro .about-text {
+    flex: 0 0 68%;
+    margin-right: 0;
+  }
+
+  .about-intro .profile {
+    flex: 0 0 30%;
+    margin-left: 2%;
+  }
+}
+
 // TODO: redefine content layout.
 
 /******************************************************************************

@@ -4,9 +4,31 @@ title: about
 permalink: /
 icon: 𝓚𝓓 # Page-specific favicon (emoji or image filename)
 _styles: |
+  /* Layout intro text and profile image as two columns on wider screens */
+  @media (min-width: 576px) {
+    .post article {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    /* Left column: all intro text and subsequent content */
+    .post article .clearfix {
+      flex: 0 0 68%;
+      margin-right: 0;
+    }
+
+    /* Right column: profile image only */
+    .profile {
+      flex: 0 0 30%;
+      float: none !important;
+      margin-left: 2%;
+    }
+  }
+
   .profile img {
     max-width: 280px;
-    width: 280px;
+    width: 100%;
   }
 
   .post article .clearfix p {
@@ -16,13 +38,6 @@ _styles: |
   /* Hide unused more-info block */
   .profile .more-info {
     display: none !important;
-  }
-
-  /* Keep all text strictly to the left of the profile image on wider screens */
-  @media (min-width: 576px) {
-    .post article .clearfix {
-      margin-right: 32% !important;
-    }
   }
 
 profile:

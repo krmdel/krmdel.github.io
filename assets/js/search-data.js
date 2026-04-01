@@ -321,6 +321,13 @@ ninja.data = [{
           window.open("mailto:%6B%65%72%65%6D.%64%65%6C%69%6B%6F%79%75%6E@%74%75%6D-%63%72%65%61%74%65.%65%64%75.%73%67", "_blank");
         },
       },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/krmdel", "_blank");
+        },
+      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
@@ -339,7 +346,7 @@ ninja.data = [{
         title: 'Work',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.tum-create.edu.sg/people/research-team/kerem-delikoyun", "_blank");
+          window.open("https://www.tum-create.edu.sg/people/research-team/dr-kerem-delikoyun", "_blank");
         },
       },{
       id: 'light-theme',

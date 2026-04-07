@@ -109,11 +109,6 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2025-01-ai-trends/";
-            },},{id: "news-kerem-was-appointed-as-research-fellow-and-team-lead-of-cellface-project-at-tumcreate",
-          title: 'Kerem was appointed as research fellow and team lead of CellFACE project at...',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/2025-01-cellface-fellow/";
             },},{id: "news-kerem-gave-a-seminar-on-ai-powered-real-time-phase-imaging-flow-cytometer-at-biology-create-seminar",
           title: 'Kerem gave a seminar on AI-powered real-time phase imaging flow cytometer at Biology@CREATE...',
           description: "",

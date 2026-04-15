@@ -337,6 +337,13 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=jY6YNQ4AAAAJ", "_blank");
         },
       },{
+        id: 'social-substack_url',
+        title: 'Substack_url',
+        section: 'Socials',
+        handler: () => {
+          window.open("", "_blank");
+        },
+      },{
         id: 'social-work',
         title: 'Work',
         section: 'Socials',

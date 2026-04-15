@@ -322,6 +322,10 @@ ul.task-list input[type="checkbox"] {
         width: 1.7rem;
         height: 1.7rem;
         margin-bottom: 0.5rem;
+        vertical-align: middle;
+        fill: var(--global-text-color);
+        color: var(--global-text-color);
+        transition: all 0.2s ease-in-out;
 
         image {
           width: 1.7rem;
@@ -336,6 +340,11 @@ ul.task-list input[type="checkbox"] {
 
       &:hover {
         i::before {
+          color: var(--global-theme-color);
+        }
+
+        svg {
+          fill: var(--global-theme-color);
           color: var(--global-theme-color);
         }
       }

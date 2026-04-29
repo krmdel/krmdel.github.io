@@ -69,17 +69,6 @@ ninja.data = [{
             window.open("https://keremdelikoyun.substack.com/p/an-ai-agent-built-for-scientific", "_blank");
           
         },
-      },{id: "post-coming-soon",
-        
-          title: "Coming soon...",
-        
-        description: "Coming soon...",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/coming-soon/";
-          
-        },
       },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",

@@ -58,7 +58,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photos/";
           },
-        },{id: "post-coming-soon",
+        },{id: "post-an-ai-agent-built-for-scientific-discovery-workflows-just-claimed-1-on-several-problems-from-google-deepmind-39-s-alphaevolve-companion-paper",
+        
+          title: 'An AI agent built for scientific discovery workflows just claimed #1 on several... <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "Organon — an agent-first operating system for everyday science. The same skill stack that handles literature, data, hypotheses, writing, and figures is what climbed to live #1 on three Einstein Arena math problems, with a human in the...",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://keremdelikoyun.substack.com/p/an-ai-agent-built-for-scientific", "_blank");
+          
+        },
+      },{id: "post-coming-soon",
         
           title: "Coming soon...",
         

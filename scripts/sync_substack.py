@@ -57,7 +57,15 @@ def truncate(text: str, limit: int = 240) -> str:
 
 
 def fetch_feed(url: str = FEED_URL) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": "krmdel-blog-sync/1.0"})
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0"
+        ),
+        "Accept": "application/rss+xml, application/xml, text/xml, */*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Cache-Control": "no-cache",
+    }
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=30) as resp:
         return resp.read()
 
@@ -115,9 +123,10 @@ def main() -> int:
 
     try:
         raw = fetch_feed()
-    except Exception as exc:  # network / HTTP error — fail soft
-        print(f"error: failed to fetch feed: {exc}", file=sys.stderr)
-        return 1
+    except Exception as exc:
+        # Soft-fail: Substack/Cloudflare sometimes blocks CI IPs; retry next run.
+        print(f"warning: could not fetch feed: {exc}", file=sys.stderr)
+        return 0
 
     try:
         root = ET.fromstring(raw)

@@ -6,4 +6,3 @@ inline: false
 related_posts: false
 redirect: https://iyte.edu.tr/haber/iyte-ogrencilerine-patent-odulu/
 ---
-

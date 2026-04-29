@@ -6,4 +6,3 @@ inline: false
 related_posts: false
 redirect: https://singapore.aitinkerers.org/hackathons/h_bPX54fcV9LE/entries/ht_E6KnlBxUYD0
 ---
-

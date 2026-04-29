@@ -6,4 +6,3 @@ inline: false
 related_posts: false
 redirect: https://www.tum-create.edu.sg/news/trends-and-predictions-ai-2025
 ---
-

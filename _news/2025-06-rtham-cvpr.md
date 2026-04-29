@@ -6,4 +6,3 @@ inline: false
 related_posts: false
 redirect: https://sites.google.com/nyu.edu/computervisionforscience/
 ---
-

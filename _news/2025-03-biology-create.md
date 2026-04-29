@@ -6,4 +6,3 @@ inline: false
 related_posts: false
 redirect: https://www.tum-create.edu.sg/news/advancing-acute-care-tumcreate-research-cellface-biologycreate-seminar
 ---
-

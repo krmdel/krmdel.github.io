@@ -38,4 +38,3 @@ _styles: |
     </p>
   {% endif %}
 </div>
-

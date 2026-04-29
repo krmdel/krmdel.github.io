@@ -6,4 +6,3 @@ inline: false
 related_posts: false
 redirect: https://www.tum-create.edu.sg/news/cellface-awarded-smart-innovation-grant-20
 ---
-

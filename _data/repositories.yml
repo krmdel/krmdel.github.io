@@ -4,11 +4,11 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
+  - name: krmdel/organon
+    description: "Organon: An Agent-First Operating System for Scientific Discovery"
   - name: krmdel/TriAgent
     description: "TriAgent: Automated Biomarker Discovery with Deep Research Grounding for Triage in Acute Care by LLM-Based Multi-Agent Collaboration"
   - name: krmdel/rt_had
     description: "RT-HAD is an end-to-end, microscope-agnostic framework for quantitative phase imaging processing >30 GB of data under 2 min"
   - name: krmdel/medical_assistant_rag
     description: "Medical Assistant RAG system for healthcare applications"
-  - name: krmdel/hospital_admission_prediction
-    description: "The repo of MLOps Zoomcamp 2024 final project"

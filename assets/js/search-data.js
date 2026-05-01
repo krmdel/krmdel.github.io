@@ -214,6 +214,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/huggingface_cv_course/";
+            },},{id: "projects-organon-an-agent-first-operating-system-for-scientific-discovery",
+          title: 'Organon: An Agent-First Operating System for Scientific Discovery',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/organon/";
             },},{id: "projects-real-time-deep-learning-phase-imaging-flow-cytometer-reveals-blood-cell-aggregate-biomarkers-for-haematology-diagnostics",
           title: 'Real-time deep learning phase imaging flow cytometer reveals blood cell aggregate biomarkers for...',
           description: "",

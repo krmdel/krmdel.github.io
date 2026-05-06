@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-icon: 𝓚𝓓 # Page-specific favicon (emoji or image filename)
 _styles: |
   /* Layout intro text and profile image as two columns on wider screens */
   @media (min-width: 576px) {

@@ -204,6 +204,11 @@ ninja.data = [{
           description: "Johor Bahru/Malaysia",
           section: "Photos",handler: () => {
               window.location.href = "/photos/2025-09-jb/";
+            },},{id: "projects-agentic-ai-for-scientists-a-6-week-hands-on-workshop-series",
+          title: 'Agentic AI for Scientists: A 6-Week Hands-On Workshop Series',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/agentic-ai-workshop/";
             },},{id: "projects-agentic-os-for-healthcare-amp-ai-doctor-for-medical-superintelligence",
           title: 'Agentic OS for Healthcare &amp;amp; AI Doctor for Medical Superintelligence',
           description: "",

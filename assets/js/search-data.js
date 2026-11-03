@@ -144,6 +144,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/2026-01-cellface-fellow/";
+            },},{id: "news-kerem-joined-gic-as-ai-engineer-avp-in-the-ai-engineering-team-working-on-the-foundational-agent-platform-and-agent-harness-that-let-teams-across-the-organisation-build-and-run-ai-agents-securely-and-at-scale",
+          title: 'Kerem joined GIC as AI Engineer (AVP) in the AI Engineering team, working...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/2026-09-gic-ai-engineer/";
             },},{id: "photos-2024-02-at",
           title: '2024 02 At',
           description: "Atlanta/USA",
@@ -319,13 +324,6 @@ ninja.data = [{
           title: '“Patience is a virtue, and I’m learning patience. It’s a tough lesson.” Elon...',
           description: "",
           section: "Quotes",},{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%6B%65%72%65%6D.%64%65%6C%69%6B%6F%79%75%6E@%74%75%6D-%63%72%65%61%74%65.%65%64%75.%73%67", "_blank");
-        },
-      },{
         id: 'social-github',
         title: 'GitHub',
         section: 'Socials',
@@ -352,13 +350,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("", "_blank");
-        },
-      },{
-        id: 'social-work',
-        title: 'Work',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.tum-create.edu.sg/people/research-team/dr-kerem-delikoyun", "_blank");
         },
       },{
       id: 'light-theme',

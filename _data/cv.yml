@@ -5,16 +5,24 @@
       value: Kerem Delikoyun
     - name: Speciality
       value: AI Engineer
-    - name: Email
-      value: kerem.delikoyun@tum-create.edu.sg
 
 - title: Work
   type: time_table
   contents:
+    - title: AI Engineer, AVP
+      institution: GIC
+      location: Singapore
+      year: Sep 2026 - Present
+      description:
+        - Foundational enterprise AI agent platform
+        - Agent harness and runtime engineering
+        - Multi-step workflow orchestration
+        - Durable execution and scaling of agent workloads
+        - Secure, production-grade AI agents
     - title: Research Fellow and Team Lead
       institution: TUMCREATE
       location: Singapore
-      year: Jan 2026 - Present
+      year: Jan 2026 - Aug 2026
       description:
         - Agentic AI
         - LLM-based multi-agent systems
